@@ -1,0 +1,26 @@
+{
+  "name": "email-domain",
+  "version": "1.0.0",
+  "description": "Create email address from incomplete email string and given domain",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/email-domain.git"
+  },
+  "keywords": [
+    "email",
+    "domain"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/email-domain/issues"
+  },
+  "homepage": "https://github.com/bredele/email-domain#readme",
+  "devDependencies": {
+    "tape": "^4.9.1"
+  }
+}
