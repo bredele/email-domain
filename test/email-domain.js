@@ -27,3 +27,8 @@ test('should create email address from email string containing a @ character and
   assert.plan(1)
   assert.equal(email('hello@', 'gmail.com'), 'hello@gmail.com')
 })
+
+test('should create email address from incomplete address and domain', assert => {
+  assert.plan(1)
+  assert.equal(email('hello@gm', 'gmail.com'), 'hello@gmail.com')
+})
