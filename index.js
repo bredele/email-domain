@@ -8,6 +8,11 @@
  * @api public
  */
 
-module.exports = function (email, domain) {
-
+module.exports = (email, domain) => {
+  if (email && domain) {
+    const [left, right] = email.split('@')
+    if (right != null) {
+      return left + '@' + domain
+    }
+  }
 }
