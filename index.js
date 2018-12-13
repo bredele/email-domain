@@ -11,7 +11,7 @@
 module.exports = (email, domain) => {
   if (email && domain) {
     const [left, right] = email.split('@')
-    if (right != null) {
+    if (right != null && domain.indexOf(right) > -1) {
       return left + '@' + domain
     }
   }

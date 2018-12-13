@@ -32,3 +32,8 @@ test('should create email address from incomplete address and domain', assert =>
   assert.plan(1)
   assert.equal(email('hello@gm', 'gmail.com'), 'hello@gmail.com')
 })
+
+test('should return null or undefined when the domain of the given email is not index of the given domain', assert => {
+  assert.plan(1)
+  assert.equal(email('hello@go', 'gmail.com') == null, true)
+})
