@@ -1,13 +1,11 @@
 {
   "name": "email-domain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create email address from incomplete email string and given domain",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "tape test/*.js"
-  },
-  "engines": {
-    "node": ">= 8.9.4"
+    "test": "node --test ./test/email-domain.test.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/bredele/email-domain/issues"
   },
-  "homepage": "https://github.com/bredele/email-domain#readme",
-  "devDependencies": {
-    "tape": "^4.9.1"
-  }
+  "homepage": "https://github.com/bredele/email-domain#readme"
 }
